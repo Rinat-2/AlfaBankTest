@@ -13,7 +13,6 @@ class AlfaBankTest {
         open("https://alfabank.ru/");
 
         $(byText("Вклады")).click();
-        $("body").shouldHave(text("Депозиты"));
         $$(byText("Депозиты")).find(visible).click();
         $(byText("Архивные депозиты")).click();
 
