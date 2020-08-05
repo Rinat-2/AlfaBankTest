@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-//Добавление товара в корзину
+
 class AlfaBankTest {
     @Test
     void selenideSearchTest() {
