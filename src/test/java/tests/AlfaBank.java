@@ -21,6 +21,7 @@ class AlfaBankContributionTest {
                 "по закону его вкладчикам выплачиваются возмещения по вкладам."));
     }
 }
+
 class AlfaBankDepositTest {
     @Test
     void selenideSearchTest() {
@@ -31,6 +32,6 @@ class AlfaBankDepositTest {
         $$(byText("Депозиты")).find(visible).click();
         $(byText("Архивные депозиты")).click();
 
-        $("html").shouldHave(text("Архивные депозиты"));
+        $(".product-cell__row-header").shouldHave(text("Архивные депозиты"));
     }
 }
