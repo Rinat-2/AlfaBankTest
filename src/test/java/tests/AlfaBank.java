@@ -6,8 +6,8 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-//
-class AlfaBankTest {
+
+class AlfaBankDepositTest {
     @Test
     void selenideSearchTest() {
         open("https://alfabank.ru/");
@@ -20,7 +20,7 @@ class AlfaBankTest {
         $("html").shouldHave(text("Архивные депозиты"));
     }
 }
-class AlfaBank1Test {
+class AlfaBankContributionTest {
     @Test
     void selenideSearchTest() {
         open("https://alfabank.ru/");
