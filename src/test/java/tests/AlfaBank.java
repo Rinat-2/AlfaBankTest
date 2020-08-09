@@ -28,7 +28,7 @@ class AlfaBankDepositTest {
         open("https://alfabank.ru/");
 
         $(byText("Вклады")).click();
-        $("body").shouldHave(text("Депозиты"));
+        $(".selected").shouldHave(text("Депозиты"));
         $$(byText("Депозиты")).find(visible).click();
         $(byText("Архивные депозиты")).click();
 
